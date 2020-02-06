@@ -1,0 +1,50 @@
+<div class="ctrl_first_line">
+    <div id="play_ctrl" class="ctrl ctrl_material_button tip {{sett.play}} icon-play" data-ctrl="play">
+    </div>
+    <div id="stop_ctrl" class="ctrl ctrl_material_button tip {{sett.stop}} icon-stop" data-ctrl="stop">
+    </div>
+    <div id="reset_ctrl" class="ctrl ctrl_material_button tip icon-reset" data-ctrl="reset">
+    </div>
+    <div id="loop_ctrl" class="ctrl ctrl_material_button {{sett.loop}} tip icon-loop" data-ctrl="loop">
+    </div>
+</div>
+<div class="ctrl_second_line">
+    <div class="right">
+        <!--div id="settings_ctrl" class="ctrl button{{sett.settings}} tip icon icon-settings" data-ctrl="settings">
+        </div-->
+        <!--<div id="measure_ctrl" class="ctrl right button {{sett.measure}} tip" data-ctrl="measure">-->
+            <!--<img alt="Measure" src="img/measure{{#sett.measure}}_white{{/sett.measure}}.png" />-->
+        <!--</div>-->
+        <div id="measure_ctrl" class="ctrl button {{sett.measure}} tip icon icon-measure" data-ctrl="measure">
+        </div>
+        <div id="speed_ctrl" class="ctrl text button unselect tip" data-ctrl="speed">
+            {{sett.speed}} x
+        </div>
+        <div id="resol_ctrl" class="ctrl text button unselect tip" data-ctrl="resol">
+            {{sett.resol}}px
+        </div>
+        <div id="webgl_ctrl" class="ctrl button {{sett.webgl}} tip" data-ctrl="glwant">
+            GL
+        </div>
+        <!--div id="image_size_info" class="image_size_info tip" data-ctrl="resolution">
+            <span class="icon icon-resolution"></span>
+            <span id="image_size_info_numbers" class="image_size_info-numbers"></span> px
+        </div-->
+        <!--div id="resize_ctrl" class="ctrl button {{sett.resize}} tip icon icon-resize" data-ctrl="resize">
+        </div-->
+    </div>
+    <div id="ctrl_select"></div>
+    <div>
+        <span class="ctrl_export_label">{{export_lang}}:</span>
+        <div id="svg_ctrl" class="ctrl button tip" data-ctrl="SVG">
+            SVG
+        </div>
+        <div id="png_ctrl" class="ctrl button tip" data-ctrl="PNG">
+            PNG
+        </div>
+        <div id="txt_ctrl" class="ctrl button tip" data-ctrl="TXT">
+            TXT
+        </div>
+
+    </div>
+</div>

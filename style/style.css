@@ -1,0 +1,412 @@
+@font-face {
+    font-family: 'Lato-Heavy';
+    src: url('../fonts/Lato-Heavy.woff') format('woff'),
+    url('../fonts/Lato-Heavy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('../fonts/Lato-Regular.woff') format('woff'),
+    url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MaterialIcons';
+    src: url('../fonts/MaterialIcons-Regular.woff') format('woff');
+}
+
+html {
+}
+
+body {
+    position: relative;
+    background-color: #e7e7e7;
+    color: #303030;
+    font-family: Lato-Regular, Arial, sans-serif;
+    font-size: 14px;
+}
+
+#all {
+    width: auto;
+    /*height:1000px;*/
+    position: relative;
+    min-width: 1100px;
+}
+
+#cont {
+    background-color: white;
+    padding: 20px;
+    width: 600px;
+    height: 600px;
+    box-shadow: 0 0 5px 1px #aaaaaa;
+    margin-bottom: 200px;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+
+/*
+#cont {
+    background-color: white;
+    padding: 20px;
+    width: 1000px;
+    box-shadow: 0 0 5px 1px #aaaaaa;
+    margin-bottom: 200px;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+*/
+
+.incont {
+    width: 100%;
+}
+
+#file_cont {
+    position: relative;
+    z-index: 10;
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+
+#ctrl_cont {
+    position: relative;
+}
+
+#main_cont {
+    height: 470px;
+    width: 100%;
+    position: relative;
+}
+
+/*
+#main_cont {
+    height: 750px;
+    width: 100%;
+    position: relative;
+}
+*/
+
+#cons {
+    position: fixed;
+    margin-left: 5px;
+    max-width: 300px;
+    overflow: auto;
+    bottom: 5px;
+    right: 5px;
+}
+
+#side {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+#middle_can_text {
+    position: relative;
+    top: 45%
+}
+
+.metadyn_name {
+    font-family: Lato-Heavy, ArialBold, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.file_cont_half * {
+    vertical-align: middle;
+}
+
+.metadyn_name_second {
+    color: #aaaaaa;
+}
+
+.examples_select {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 35px;
+    border: 1px solid #ccc;
+    /*box-shadow: 0 0 5px 1px #aaaaaa;*/
+    right: 0;
+}
+
+.incont .button {
+    padding: 5px 10px;
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 5px 2px;
+    height: 25px;
+    line-height: 28px;
+    vertical-align: middle;
+    font-family: Lato-Heavy, ArialBold, sans-serif;
+    cursor: pointer;
+}
+
+.incont .button img {
+    vertical-align: middle;
+}
+
+.incont .button:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.incont .button.on, .ctrl_mini_button.on {
+    color: white;
+    background-color: #f14213;
+    border-color: #f14213;
+}
+
+.incont .button.on:hover, .ctrl_mini_button.on:hover {
+    background-color: #d43a12;
+}
+
+.ctrl_link {
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.ctrl_link:hover {
+    text-decoration: none;
+}
+
+.lang_select {
+    position: relative;
+    border-radius: 5000px;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.lang_select:hover:before {
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.ctrl_material_button {
+    cursor: pointer;
+    display: inline-block;
+    color: #888888;
+    font-family: MaterialIcons, sans-serif;
+    font-size: 25px;
+    padding: 5px;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+.icon:before {
+    font-family: MaterialIcons, sans-serif;
+}
+
+.ctrl_material_button:hover {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.ctrl_material_button.on {
+    color: #f14213;
+}
+
+.button:before {
+    font-size: 20px;
+}
+
+.icon-play:before {
+    content: '\e037';
+}
+
+.icon-stop:before {
+    content: '\e034';
+}
+
+.icon-reset:before {
+    content: '\e5d5';
+}
+
+.icon-loop:before {
+    content: '\e86a';
+}
+
+.icon-resolution:before {
+    /*content: '\e85b';*/
+    content: '\E8C4';
+}
+
+.icon-resize:before {
+    content: '\e06e';
+}
+
+.icon-measure:before {
+    content: '\e41c';
+}
+
+.icon-settings:before {
+    content: '\e8b8';
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/*#resol_ctrl{
+    height:25px;
+    color:white;
+    text-align: center;
+    cursor: default;
+}
+#speed_ctrl{
+    height:25px;
+}*/
+.unselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#canvas_cont {
+    text-align: center;
+}
+
+#canvas_cont.empty {
+    border-radius: 5px;
+    border: 2px dashed #888888;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.relative {
+    position: relative;
+}
+
+#slide_cont {
+    position: relative;
+    width: 100%;
+    height: 25px;
+}
+
+#stats {
+    position: fixed;
+    right: 5px;
+    top: 5px;
+}
+
+.example {
+    float: right;
+}
+
+#file_seld {
+    padding: 2px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+#feed_cont {
+    width: 400px;
+    border: 1px solid black;
+    float: left;
+}
+
+.feed_note {
+    width: 100%;
+}
+
+.feed_note_author {
+    font-size: 18px;
+}
+
+.feed_input {
+    width: 80%;
+}
+
+#feed_text {
+    height: 100px;
+}
+
+.feed_note_longtext {
+    display: none;
+}
+
+.ctrl_second_line {
+    position: relative;
+    margin-top: 15px;
+}
+
+.vertical {
+    /*margin-bottom:0;margin-left:0;z-index:5;*/
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    -moz-transform-origin: 20px 0px;
+    /* Internet Explorer 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+    -ms-transform: rotate(0deg);
+    /* opera*/
+    -o-transform: rotate(-90deg);
+    /* opera tmb*/
+    -o-transform-origin: 150px 150px;
+}
+
+.lclear {
+    clear: left;
+}
+
+.nomargin {
+    margin: 0px;
+}
+
+.main_can {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.aux_can {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 5;
+}
+
+.elixir-logo {
+    width: 186px;
+    margin: 40px 7px 7px;
+}
+
+.footer {
+    color: #9a9a9a;
+    text-align: center;
+}
+
+.cons_text_level_1 {
+    color: red;
+}
+
+.cons_text_level_2 {
+    color: orange;
+}
+
+.cons_text_level_3 {
+    color: #9a9a9a;
+}
+
+.cons_text_level_4 {
+    color: #4499d0;
+}
+

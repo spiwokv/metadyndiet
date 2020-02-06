@@ -1,0 +1,153 @@
+.axi_all {
+    position: absolute;
+    /*float:left;*/
+}
+
+.actrl {
+    background-color: red;
+}
+
+.red {
+    background-color: red;
+}
+
+.halfred {
+    /*background-color: rgba(255,0,0,0.4);*/
+}
+
+.axis.button {
+    background-color: red;
+}
+.axi_rename_cont{
+    z-index: 20;
+}
+.image_size_info{
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 5px;
+    vertical-align: sub;
+}
+.image_size_info .icon{
+    font-size: 20px;
+    line-height: 0.9;
+    vertical-align: text-top;
+}
+.image_size_info-numbers{
+    font-weight: bold;
+}
+
+.axis.button img {
+    width: calc(100% - 4px);
+    width: -moz-calc(100% - 4px);
+    width: -webkit-calc(100% - 4px);
+    height: calc(100% - 4px);
+    height: -moz-calc(100% - 4px);
+    height: -webkit-calc(100% - 4px);
+    margin: 2px;
+}
+
+#slide_cont{
+    padding-top: 10px;
+}
+#slide {
+    width: calc(100% - 82px);
+    width: -moz-calc(100% - 82px);
+    width: -webkit-calc(100% - 82px);
+    box-sizing: border-box;
+    height: 2px;
+    margin: 0 5px;
+    display: inline-block;
+    background-color: #ccc;
+}
+#slide_fill{
+    background-color: #ff4422;
+    height: 2px;
+}
+
+#slider {
+    position: absolute;
+    z-index: 10;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 3px rgba(70,70,70,0.2);
+    border-radius: 5000px;
+    left: 0;
+}
+/*#slider:hover{*/
+    /*background-color: rgba(0,0,0,0.12);*/
+/*}*/
+
+#slide_input {
+    position: absolute;
+    margin: 3px;
+    margin-left: 0;
+    box-sizing: border-box;
+    /*right: 0;*/
+    width: 80px;
+    height: 20px;
+    text-align: right;
+    border: none;
+}
+#slide_input:focus, #axi_rnm_input:focus{
+    outline: none;
+    border: 1px solid #ff4422;
+    box-shadow: 0 0 10px #ff4422;
+}
+
+#ctrl_select {
+    position: absolute;
+    z-index: 10;
+    border: 1px solid #cdcdcd;
+    background-color: white;
+    display: none;
+    margin-top: 1px;
+    bottom: 42px;
+    padding: 5px 0;
+}
+
+.sel {
+    cursor: default;
+    padding: 0 10px;
+    font-family: Lato-Heavy,ArialBold,sans-serif;
+    /*    margin-left: 1px;
+        margin-right: 1px;*/
+}
+.sel:hover{
+    background-color: #ccc;
+}
+
+.sel.on {
+    background-color: #ff4422;
+    color: white;
+}
+.sel.on:hover{
+    background-color: #ff8844;
+}
+
+#axi_rnm_input {
+    padding: 5px;
+}
+
+#tooltip {
+    border: 1px solid #ccc;
+    background: white;
+    position: absolute;
+    z-index: 200;
+    padding: 10px;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+
+.drag-overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ctrl_export_label{
+    color: #999999;
+}
